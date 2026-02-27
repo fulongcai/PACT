@@ -1,0 +1,31 @@
+STRUCTURE:
+  model_name: PACT
+  width: 12
+  block_residual: True
+  block_reps: 2
+  use_coords: True
+
+DATA:
+  input_channel: 4
+  root: /home/cfl/code/PACT/dataset/EV-UAV-dataset
+  whole_t: 8000
+  res: [352,288]
+TRAIN:
+  epochs: 50
+  batch_size: 2
+  train_workers: 8
+  optim: Adam
+  lr: 0.001
+  k: 3
+  t: 5
+  max_events_num : 100000
+  model_save_root:  /home/cfl/code/PACT/checkpoint
+
+TEST:
+  vis: False
+  eval: True
+  roc: True
+  pd_detT: 50
+  correct_thresh: 0.0001
+  save: True
+  model_path: /home/cfl/code/PACT/checkpoint/
