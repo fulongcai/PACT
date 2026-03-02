@@ -1,6 +1,6 @@
 
 
-# 🚁 Following the Flow: Advection-Consistent Modeling
+# 🚁 Following the Flow: Advection-Consistent Modeling for Event-based Small Object Detection
 
 
 <p align="center">
