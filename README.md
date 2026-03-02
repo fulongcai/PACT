@@ -169,12 +169,7 @@ Pretrained weights will be released **soon**.
 If you find this project useful in your research, please cite:
 
 ```bibtex
-@article{pact_placeholder_2026,
-  title   = {Following the Flow: Advection-Consistent Modeling for Event-based Small Object Detection},
-  author  = {Author list coming soon},
-  journal = {Conference / Journal coming soon},
-  year    = {2026}
-}
+todo
 ```
 
 ---
