@@ -119,3 +119,9 @@ Pretrained weights will be released **soon**.
 ## Acknowledgement
 
 This project is built upon **EV-SpSegNet**, [HAIS](https://github.com/hustvl/HAIS), and [spconv](https://github.com/traveller59/spconv). We sincerely thank the authors of these open-source projects for making their code publicly available.
+
+## License
+
+The original code in this repository is licensed under the [Apache License 2.0](LICENSE).
+
+Third-party components remain subject to their respective licenses and copyright notices. The EV-UAV dataset and pretrained model weights are not covered by this repository's license unless explicitly stated otherwise.
