@@ -72,18 +72,27 @@ PACT follows the original EV-UAV data format, for detailed dataset description, 
 ### 1) Install dependencies
 
 ```bash
-conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+uv venv --python 3.8 .venv
+uv pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 --find-links https://download.pytorch.org/whl/torch_stable.html
+uv pip install --python .venv/bin/python pyyaml tqdm mlflow pandas opencv-python-headless setuptools
 ```
 
 ### 2) Install SP-Conv (Necessary)
 
-Please follow the [official guidance](https://github.com/traveller59/spconv).
+```bash
+uv pip install spconv-cu113
+```
+Or please follow the [official guidance](https://github.com/traveller59/spconv).
 
 ### 3) Compile HAIS
 
 ```bash
+apt update
+apt install -y libsparsehash-dev 
+
 cd lib/hais_ops
 export CPLUS_INCLUDE_PATH={conda_env_path}/hais/include:$CPLUS_INCLUDE_PATH
+export TORCH_CUDA_ARCH_LIST="7.5;8.0;8.6"
 python setup.py build_ext develop
 cd ../..
 ```
