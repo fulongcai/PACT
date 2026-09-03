@@ -114,7 +114,11 @@ python test.py
 
 ## Checkpoints
 
-Pretrained weights will be released **soon**.
+Pretrained checkpoints are available below.
+
+| Dataset | Checkpoint |
+|:-------:|:----------:|
+| EV-UAV | [Download](https://github.com/fulongcai/PACT/releases/download/v1.0/checkpoint_improved.pt) |
 
 ## Acknowledgement
 
