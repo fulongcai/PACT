@@ -4,7 +4,7 @@ import os
 
 def get_parser():
     parser = argparse.ArgumentParser(description='Event Point Cloud Segmentation')
-    parser.add_argument('--config', default='/home/cfl/code/PACT/configs/evisseg_evuav.yaml',type=str, help='path to config file')
+    parser.add_argument('--config', default='configs/evisseg_evuav.yaml',type=str, help='path to config file')
 
     args_cfg = parser.parse_args()
     assert args_cfg.config is not None
