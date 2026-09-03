@@ -80,7 +80,7 @@ uv pip install --python .venv/bin/python pyyaml tqdm mlflow pandas opencv-python
 ### 2) Install SP-Conv (Necessary)
 
 ```bash
-uv pip install spconv-cu113
+uv pip install spconv-cu111
 ```
 Or please follow the [official guidance](https://github.com/traveller59/spconv).
 
